@@ -1,0 +1,280 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFFFFF;
+
+}
+
+
+h1 {
+	position: relative;
+	color: #FFFFFF;
+	font-family: 'PT Serif', sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.container {
+	max-width: 1000px;
+
+}
+
+.intro {
+	width: 100%;
+	height: 500px;
+	background-image: url(/Users/lili/Documents/Portfolio/Images/Ipad_Tea_Web.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+}
+
+
+nav, nav a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+nav li {
+	display: inline-block;
+	
+}
+
+nav a {
+	padding: 15px;
+	font-weight: bold;
+	transition: all .2s ease-in-out;
+}
+
+nav a:hover {
+	color: #FF727B;
+	text-decoration: none;
+}
+
+.navbar-custom {
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	font-family: 'Open Sans', sans-serif;
+	background-color: #FF727B;
+} 
+
+.navbar-custom .navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+	outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+.navbar-custom .navbar-brand .navbar-toggle:focus
+.navbar-custom .navbar-brand .navbar-toggle:active {
+	outline: 0;
+} 
+
+.navbar-custom a {
+	color: #FFFFFF;
+} 
+
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+} 
+
+.navbar-custom .nav li a:hover {
+	outline: 0;
+	color: rgba(255,255,255,.5); 
+	background-color: transparent;
+} 
+
+.navbar-custom .nav li a:focus
+.navbar-custom .nav li a:active {
+	outline: 0;
+	background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+	outline: 0;
+} 
+
+.navbar-custom .nav li.active a {
+	background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+	color: #FF727B;
+}
+
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    } 
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #FF727B;
+    }
+}
+
+.page-scroll {
+	background-color: transparent;
+}
+
+section {
+	padding: 70px 30px;
+	
+}
+#about {
+ 	background-color: #FF727B;
+ 	color: #FFFFFF;
+ 	font-size: 18px;
+ 	text-align: center;
+ }
+
+#skills {
+	background-color: #FFFFFF;
+ 	color: #FF727B;
+ 	font-size: 18px;
+ 	text-align: center;
+}
+ 
+#projects {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+.no-gutter > [class*=col-] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.portfolio-item .portfolio-item-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(255,114,123,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content .project-name,
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content .project-description {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content .project-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content .project-description {
+    font-size: 18px;
+}
+
+.portfolio-item:hover .portfolio-item-caption {
+    opacity: 1;
+}
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+
+#contact {
+	text-align: center;
+	color: #FF727B;
+	font-size: 18px;
+}
+
+
+
+form {
+	background-color: rgba(0,0,0,.6);
+	max-width: 500px;
+	margin: auto;
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding:10px;
+}
+
+form .btn-default:hover {
+ background-color: #FF727B;
+ color: #FFFFFF;
+ border-color: #FF727B;
+}
+
+.social-icon figure {
+ display: inline-block;
+}
+
+.social-icon figure img {
+	opacity: 1;
+	transition: .3s ease-in-out;
+}
+
+.social-icon figure:hover img {
+	opacity: .8;
+}
+
+footer {
+	background-color: #333333;
+	color: #FF727B;
+	padding: 50px 0 35px 0;
+	text-align: center;
+}
+
+
+
